@@ -1,0 +1,435 @@
+{
+  "content": [
+    {
+      "id": "hrsec1",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "hrcon1"
+      ],
+      "label": "Hero Section",
+      "settings": {
+        "tag": "section",
+        "_background": {
+          "color": {
+            "hex": "#0d0d0d"
+          }
+        },
+        "_position": "relative",
+        "_overflow": "hidden",
+        "_cssGlobalClasses": [
+          "rgch-curtain-bg"
+        ]
+      }
+    },
+    {
+      "id": "hrcon1",
+      "name": "container",
+      "parent": "hrsec1",
+      "children": [
+        "hrgrd1"
+      ],
+      "label": "Hero Container",
+      "settings": {
+        "_width": "100%",
+        "_widthMax": "1400",
+        "_padding": {
+          "top": "clamp(7rem, 14vw, 10rem)",
+          "right": "var(--rgch-pad-h)",
+          "bottom": "clamp(7rem, 14vw, 10rem)",
+          "left": "var(--rgch-pad-h)"
+        },
+        "_margin": {
+          "top": "0",
+          "right": "auto",
+          "bottom": "0",
+          "left": "auto"
+        }
+      }
+    },
+    {
+      "id": "hrgrd1",
+      "name": "block",
+      "parent": "hrcon1",
+      "children": [
+        "hrlft1",
+        "hrrgt1"
+      ],
+      "label": "Hero Grid",
+      "settings": {
+        "_display": "flex",
+        "_direction": "row",
+        "_alignItems": "center",
+        "_columnGap": "clamp(2rem, 4vw, 4rem)",
+        "_direction:tablet_portrait": "column",
+        "_rowGap:tablet_portrait": "3rem"
+      }
+    },
+    {
+      "id": "hrlft1",
+      "name": "block",
+      "parent": "hrgrd1",
+      "children": [
+        "hrbdg1",
+        "hrhd01",
+        "hrhd02",
+        "hrsbt1",
+        "hrcta1"
+      ],
+      "label": "Hero Left — Text",
+      "settings": {
+        "_flexGrow": "1",
+        "_flexShrink": "1",
+        "_flexBasis": "0",
+        "_display": "flex",
+        "_direction": "column",
+        "_alignItems": "flex-start",
+        "_rowGap": "1.5rem",
+        "_zIndex": "2",
+        "_width:tablet_portrait": "100%",
+        "_alignItems:tablet_portrait": "center"
+      }
+    },
+    {
+      "id": "hrbdg1",
+      "name": "block",
+      "parent": "hrlft1",
+      "children": [
+        "hrbtx1"
+      ],
+      "label": "Badge",
+      "settings": {
+        "_cssGlobalClasses": [
+          "rgch-badge"
+        ]
+      }
+    },
+    {
+      "id": "hrbtx1",
+      "name": "text-basic",
+      "parent": "hrbdg1",
+      "children": [],
+      "label": "Badge Text",
+      "settings": {
+        "text": "✦ Creative Agency"
+      }
+    },
+    {
+      "id": "hrhd01",
+      "name": "heading",
+      "parent": "hrlft1",
+      "children": [],
+      "label": "Heading Line 1",
+      "settings": {
+        "tag": "h1",
+        "text": "Creative",
+        "_cssGlobalClasses": [
+          "rgch-h1-white"
+        ],
+        "_margin": {
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0"
+        },
+        "_textAlign:tablet_portrait": "center"
+      }
+    },
+    {
+      "id": "hrhd02",
+      "name": "heading",
+      "parent": "hrlft1",
+      "children": [],
+      "label": "Heading Line 2",
+      "settings": {
+        "tag": "h1",
+        "text": "Agency.",
+        "_cssGlobalClasses": [
+          "rgch-h1-red"
+        ],
+        "_margin": {
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0"
+        },
+        "_textAlign:tablet_portrait": "center"
+      }
+    },
+    {
+      "id": "hrsbt1",
+      "name": "text-basic",
+      "parent": "hrlft1",
+      "children": [],
+      "label": "Hero Subtext",
+      "settings": {
+        "text": "We craft bold brands and digital experiences that push creative boundaries — from strategy to screen.",
+        "_typography": {
+          "font-family": "Inter, sans-serif",
+          "font-size": "clamp(1rem, 1.3vw, 1.125rem)",
+          "font-weight": "400",
+          "color": {
+            "raw": "rgba(255,255,255,0.65)"
+          },
+          "line-height": "1.7"
+        },
+        "_width": "clamp(20rem, 36vw, 28rem)",
+        "_textAlign:tablet_portrait": "center",
+        "_width:tablet_portrait": "100%"
+      }
+    },
+    {
+      "id": "hrcta1",
+      "name": "block",
+      "parent": "hrlft1",
+      "children": [
+        "hrbt01"
+      ],
+      "label": "CTA Row",
+      "settings": {
+        "_display": "flex",
+        "_direction": "row",
+        "_alignItems": "center",
+        "_columnGap": "1.25rem",
+        "_margin": {
+          "top": "0.5rem",
+          "right": "0",
+          "bottom": "0",
+          "left": "0"
+        }
+      }
+    },
+    {
+      "id": "hrbt01",
+      "name": "block",
+      "parent": "hrcta1",
+      "children": [
+        "hrbtnt",
+        "hrbci1"
+      ],
+      "label": "Get Started Button",
+      "settings": {
+        "_tag": "a",
+        "_cssGlobalClasses": [
+          "rgch-btn-primary"
+        ],
+        "_cssCustom": "%root% { cursor: pointer; text-decoration: none; }"
+      }
+    },
+    {
+      "id": "hrbtnt",
+      "name": "text-basic",
+      "parent": "hrbt01",
+      "children": [],
+      "label": "Button Label",
+      "settings": {
+        "text": "Get Started"
+      }
+    },
+    {
+      "id": "hrbci1",
+      "name": "block",
+      "parent": "hrbt01",
+      "children": [],
+      "label": "Button Circle Arrow",
+      "settings": {
+        "_cssGlobalClasses": [
+          "rgch-btn-circle"
+        ],
+        "_cssCustom": "%root%::after { content: ''; display: block; width: 0; height: 0; border-style: solid; border-width: 6px 0 6px 10px; border-color: transparent transparent transparent #C41230; margin-left: 2px; }"
+      }
+    },
+    {
+      "id": "hrrgt1",
+      "name": "block",
+      "parent": "hrgrd1",
+      "children": [
+        "hrimq1"
+      ],
+      "label": "Hero Right — Image",
+      "settings": {
+        "_flexGrow": "0",
+        "_flexShrink": "0",
+        "_flexBasis": "46%",
+        "_position": "relative",
+        "_overflow": "hidden",
+        "_minHeight": "540px",
+        "_zIndex": "2",
+        "_width:tablet_portrait": "100%",
+        "_minHeight:tablet_portrait": "380px"
+      }
+    },
+    {
+      "id": "hrimq1",
+      "name": "image",
+      "parent": "hrrgt1",
+      "children": [],
+      "label": "Hero Photo — Replace with actual image",
+      "settings": {
+        "url": "",
+        "alt": "Red Giants Creative House hero photography",
+        "_cssGlobalClasses": [
+          "rgch-hero-image-fade"
+        ],
+        "_width": "100%",
+        "_height": "100%",
+        "_cssCustom": "%root% { display: block; } %root% img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }"
+      }
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://example.com",
+  "version": "2.3.6",
+  "globalClasses": [
+    {
+      "id": "rgch-curtain-bg",
+      "name": "rgch-curtain-bg",
+      "settings": {
+        "_cssCustom": ".rgch-curtain-bg { background-color: #0d0d0d; }\n.rgch-curtain-bg::before, .rgch-curtain-bg::after { content: ''; position: absolute; top: 0; bottom: 0; width: 22%; pointer-events: none; z-index: 1; }\n.rgch-curtain-bg::before { left: 0; background: radial-gradient(ellipse at left center, rgba(196,18,48,0.65) 0%, rgba(120,10,25,0.3) 50%, transparent 80%); }\n.rgch-curtain-bg::after { right: 0; background: radial-gradient(ellipse at right center, rgba(196,18,48,0.65) 0%, rgba(120,10,25,0.3) 50%, transparent 80%); }"
+      }
+    },
+    {
+      "id": "rgch-badge",
+      "name": "rgch-badge",
+      "settings": {
+        "_border": {
+          "width": {
+            "top": "1.5",
+            "right": "1.5",
+            "bottom": "1.5",
+            "left": "1.5"
+          },
+          "style": "solid",
+          "color": {
+            "hex": "#ffffff"
+          },
+          "radius": {
+            "top": "999px",
+            "right": "999px",
+            "bottom": "999px",
+            "left": "999px"
+          }
+        },
+        "_padding": {
+          "top": "0.5rem",
+          "right": "1.5rem",
+          "bottom": "0.5rem",
+          "left": "1.5rem"
+        },
+        "_typography": {
+          "font-family": "Inter, sans-serif",
+          "font-size": "0.9375rem",
+          "font-weight": "600",
+          "color": {
+            "hex": "#ffffff"
+          }
+        },
+        "_display": "inline-flex",
+        "_alignItems": "center",
+        "_justifyContent": "center"
+      }
+    },
+    {
+      "id": "rgch-h1-white",
+      "name": "rgch-h1-white",
+      "settings": {
+        "_typography": {
+          "font-family": "Inter, sans-serif",
+          "font-size": "clamp(4rem, 9vw, 7.5rem)",
+          "font-weight": "700",
+          "color": {
+            "hex": "#ffffff"
+          },
+          "line-height": "1",
+          "letter-spacing": "-0.02em"
+        }
+      }
+    },
+    {
+      "id": "rgch-h1-red",
+      "name": "rgch-h1-red",
+      "settings": {
+        "_typography": {
+          "font-family": "Inter, sans-serif",
+          "font-size": "clamp(4rem, 9vw, 7.5rem)",
+          "font-weight": "800",
+          "color": {
+            "hex": "#C41230"
+          },
+          "line-height": "1",
+          "letter-spacing": "-0.02em"
+        }
+      }
+    },
+    {
+      "id": "rgch-btn-primary",
+      "name": "rgch-btn-primary",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#C41230"
+          }
+        },
+        "_border": {
+          "radius": {
+            "top": "999px",
+            "right": "999px",
+            "bottom": "999px",
+            "left": "999px"
+          }
+        },
+        "_padding": {
+          "top": "0.625rem",
+          "right": "0.625rem",
+          "bottom": "0.625rem",
+          "left": "1.75rem"
+        },
+        "_display": "inline-flex",
+        "_alignItems": "center",
+        "_justifyContent": "space-between",
+        "_columnGap": "1rem",
+        "_typography": {
+          "font-family": "Inter, sans-serif",
+          "font-size": "clamp(1rem, 1.3vw, 1.125rem)",
+          "font-weight": "500",
+          "color": {
+            "hex": "#ffffff"
+          }
+        },
+        "_cssCustom": ".rgch-btn-primary { transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; }\n.rgch-btn-primary:hover { background: #9B0D22; transform: translateY(-2px); box-shadow: 0 12px 32px rgba(196,18,48,0.4); }"
+      }
+    },
+    {
+      "id": "rgch-btn-circle",
+      "name": "rgch-btn-circle",
+      "settings": {
+        "_background": {
+          "color": {
+            "hex": "#ffffff"
+          }
+        },
+        "_border": {
+          "radius": {
+            "top": "50%",
+            "right": "50%",
+            "bottom": "50%",
+            "left": "50%"
+          }
+        },
+        "_width": "3rem",
+        "_height": "3rem",
+        "_display": "inline-flex",
+        "_alignItems": "center",
+        "_justifyContent": "center"
+      }
+    },
+    {
+      "id": "rgch-hero-image-fade",
+      "name": "rgch-hero-image-fade",
+      "settings": {
+        "_cssCustom": ".rgch-hero-image-fade { -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 15%, black 45%); mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.15) 15%, black 45%); }"
+      }
+    }
+  ],
+  "globalElements": []
+}
