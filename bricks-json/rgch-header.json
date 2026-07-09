@@ -1,0 +1,248 @@
+{
+  "id": 1002,
+  "name": "rgch-header",
+  "title": "RGCH Header",
+  "date": "2026-07-09 00:00:00",
+  "date_formatted": "July 9, 2026",
+  "author": { "name": "RGCH", "avatar": "", "url": "" },
+  "permalink": "",
+  "thumbnail": null,
+  "bundles": [],
+  "tags": [],
+  "type": "header",
+  "templateType": "header",
+  "header": [
+
+    {
+      "id": "hdsec1",
+      "name": "section",
+      "parent": 0,
+      "children": ["hdcon1"],
+      "label": "Header Bar",
+      "settings": {
+        "tag": "header",
+        "_background": { "color": { "hex": "#0d0d0d" } },
+        "_padding": { "top": "1rem", "right": "0", "bottom": "1rem", "left": "0" },
+        "_cssCustom": "%root% { border-bottom: 1px solid rgba(255,255,255,0.07); }"
+      }
+    },
+
+    {
+      "id": "hdcon1",
+      "name": "container",
+      "parent": "hdsec1",
+      "children": ["hdlog1", "hdnvpil", "hdtog1"],
+      "label": "Header Row",
+      "settings": {
+        "_width": "100%",
+        "_widthMax": "1400",
+        "_padding": { "top": "0", "right": "var(--rgch-pad-h)", "bottom": "0", "left": "var(--rgch-pad-h)" },
+        "_margin": { "top": "0", "right": "auto", "bottom": "0", "left": "auto" },
+        "_display": "flex",
+        "_direction": "row",
+        "_alignItems": "center",
+        "_justifyContent": "space-between",
+        "_columnGap": "2rem"
+      }
+    },
+
+    {
+      "id": "hdlog1",
+      "name": "block",
+      "parent": "hdcon1",
+      "children": ["hdlgic1", "hdlgtx1"],
+      "label": "Logo",
+      "settings": {
+        "_display": "flex",
+        "_direction": "row",
+        "_alignItems": "center",
+        "_columnGap": "0.625rem"
+      }
+    },
+
+    {
+      "id": "hdlgic1",
+      "name": "block",
+      "parent": "hdlog1",
+      "children": [],
+      "label": "Logo Icon — Replace with SVG",
+      "settings": {
+        "_width": "2.75rem",
+        "_height": "2.75rem",
+        "_background": { "color": { "hex": "#C41230" } },
+        "_border": {
+          "radius": { "top": "5px", "right": "5px", "bottom": "5px", "left": "5px" }
+        },
+        "_display": "flex",
+        "_alignItems": "center",
+        "_justifyContent": "center",
+        "_cssCustom": "%root%::after { content: ''; display: block; width: 0; height: 0; border-style: solid; border-width: 7px 0 7px 13px; border-color: transparent transparent transparent #ffffff; margin-left: 2px; }"
+      }
+    },
+
+    {
+      "id": "hdlgtx1",
+      "name": "block",
+      "parent": "hdlog1",
+      "children": ["hdlgl1", "hdlgl2"],
+      "label": "Logo Text",
+      "settings": {
+        "_display": "flex",
+        "_direction": "column",
+        "_rowGap": "0.0625rem"
+      }
+    },
+
+    {
+      "id": "hdlgl1",
+      "name": "text-basic",
+      "parent": "hdlgtx1",
+      "children": [],
+      "label": "Logo Line 1",
+      "settings": {
+        "text": "Red Giants",
+        "_typography": {
+          "font-family": "Inter, sans-serif",
+          "font-size": "0.8125rem",
+          "font-weight": "400",
+          "color": { "hex": "#ffffff" },
+          "line-height": "1.2"
+        }
+      }
+    },
+
+    {
+      "id": "hdlgl2",
+      "name": "text-basic",
+      "parent": "hdlgtx1",
+      "children": [],
+      "label": "Logo Line 2",
+      "settings": {
+        "text": "Creative House",
+        "_typography": {
+          "font-family": "Inter, sans-serif",
+          "font-size": "0.9375rem",
+          "font-weight": "700",
+          "color": { "hex": "#ffffff" },
+          "line-height": "1.2"
+        }
+      }
+    },
+
+    {
+      "id": "hdnvpil",
+      "name": "block",
+      "parent": "hdcon1",
+      "children": ["hdnav1"],
+      "label": "Nav Pill",
+      "settings": {
+        "_cssGlobalClasses": ["rgch-nav-pill"],
+        "_display": "inline-flex",
+        "_display:tablet_portrait": "none"
+      }
+    },
+
+    {
+      "id": "hdnav1",
+      "name": "nav-nested",
+      "parent": "hdnvpil",
+      "children": ["hdlk01", "hdlk02", "hdlk03", "hdlk04"],
+      "label": "Main Nav",
+      "settings": {
+        "ariaLabel": "Main navigation",
+        "mobileMenu": "never",
+        "_display": "flex",
+        "_direction": "row",
+        "_alignItems": "center",
+        "_columnGap": "0"
+      }
+    },
+
+    {
+      "id": "hdlk01",
+      "name": "text-link",
+      "parent": "hdnav1",
+      "children": [],
+      "settings": {
+        "text": "About",
+        "link": { "type": "external", "url": "#about" },
+        "_cssGlobalClasses": ["rgch-nav-link"]
+      }
+    },
+
+    {
+      "id": "hdlk02",
+      "name": "text-link",
+      "parent": "hdnav1",
+      "children": [],
+      "settings": {
+        "text": "Work",
+        "link": { "type": "external", "url": "#work" },
+        "_cssGlobalClasses": ["rgch-nav-link"]
+      }
+    },
+
+    {
+      "id": "hdlk03",
+      "name": "text-link",
+      "parent": "hdnav1",
+      "children": [],
+      "settings": {
+        "text": "Service",
+        "link": { "type": "external", "url": "#service" },
+        "_cssGlobalClasses": ["rgch-nav-link"]
+      }
+    },
+
+    {
+      "id": "hdlk04",
+      "name": "text-link",
+      "parent": "hdnav1",
+      "children": [],
+      "settings": {
+        "text": "Contact",
+        "link": { "type": "external", "url": "#contact" },
+        "_cssGlobalClasses": ["rgch-nav-link"]
+      }
+    },
+
+    {
+      "id": "hdtog1",
+      "name": "block",
+      "parent": "hdcon1",
+      "children": ["hdham1"],
+      "label": "Mobile Toggle",
+      "settings": {
+        "_display": "none",
+        "_display:tablet_portrait": "flex",
+        "_alignItems": "center",
+        "_justifyContent": "center"
+      }
+    },
+
+    {
+      "id": "hdham1",
+      "name": "toggle",
+      "parent": "hdtog1",
+      "children": [],
+      "label": "Hamburger",
+      "settings": {
+        "barColor": { "hex": "#ffffff" }
+      }
+    }
+
+  ],
+  "pageSettings": {},
+  "templateSettings": {
+    "templateConditions": [{ "main": "any" }],
+    "headerSticky": true,
+    "headerStickySlideUpAfter": "300",
+    "headerStickyScrollingBackground": { "color": { "hex": "#0d0d0d" } },
+    "headerStickyScrollingBoxShadow": {
+      "values": { "offsetX": "0", "offsetY": "1", "blur": "24", "spread": "0" },
+      "color": { "raw": "rgba(0,0,0,0.55)" }
+    }
+  },
+  "global_classes": [],
+  "globalVariables": []
+}
